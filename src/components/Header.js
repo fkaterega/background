@@ -4,17 +4,34 @@ export default function Header() {
   return (
     <header className="flex justify-center items-center min-h-screen">
       <section>
-        <h1 className="antialiased text-6xl text-center text-gray-700 leading-snug">
+        <motion.h1
+          initial={{ opacity: 0, scale: 0.5, y: "-1000" }}
+          animate={{ opacity: 1, scale: 1, y: 0 }}
+          transition={{ duration: 2 }}
+          className="antialiased text-6xl text-center text-gray-700 leading-snug"
+        >
           My Background
-        </h1>
-        <h2 className="antialiased text-4xl tracking-widest text-green-600 text-center mt-4">
+        </motion.h1>
+        <motion.h2
+          initial={{ opacity: 0, scale: 0.6, x: "-100vw" }}
+          animate={{ opacity: 1, scale: 1, x: 0 }}
+          transition={{ delay: 0.9, duration: 2 }}
+          className="antialiased text-4xl tracking-widest text-red-400 text-center mt-4"
+        >
           Banange
-        </h2>
-        <h2 className="antialiased text-xl text-gray-700 text-center mt-4">
+        </motion.h2>
+        <motion.h2
+          initial={{ opacity: 0, scale: 0.5, x: 1000 }}
+          animate={{ opacity: 1, scale: 1, x: 0 }}
+          transition={{ delay: 1, duration: 2 }}
+          className="antialiased text-xl text-gray-700 text-center mt-4"
+        >
           <span className="block italic text-md">origin</span>
           <span className="mt-2 block italic">of</span>{" "}
-          <span className="antialiased text-6xl text-teal-700">Katerega</span>
-        </h2>
+          <span className="antialiased text-6xl text-red-700 font-semibold">
+            Katerega
+          </span>
+        </motion.h2>
       </section>
     </header>
   );
