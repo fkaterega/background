@@ -2,9 +2,11 @@ import img from "../images/lion.jpg";
 
 export default function Footer() {
   return (
-    <footer className="flex flex-col justify-center items-center min-h-screen bg-black shadow-lg mt-32">
+    <footer className="flex flex-col justify-center items-center min-h-screen md:w-1/3 md:ml-auto md:mr-8 md:-mt-[47rem] lg:-mt-[43rem] bg-black shadow-lg mt-32 ">
       <div>
-        <h3 className="text-white text-3xl">History and Monarchies</h3>
+        <h3 className="text-white text-3xl md:text-center">
+          History and Monarchies
+        </h3>
         <div className="flex justify-center items-center mt-24">
           <img
             className="max-w-full w-60 object-cover object-center shadow-sm rounded-sm"

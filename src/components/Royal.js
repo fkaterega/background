@@ -1,6 +1,6 @@
 export default function Royal() {
   return (
-    <section className="bg-gray-400 py-4">
+    <section className="bg-gray-100 py-8 shadow-sm md:w-1/2 md:ml-4">
       <div>
         <h2 className="antialiased text-center text-gray-950 text-4xl font-bold mb-14 mt-1">
           Abalangira
